@@ -15,7 +15,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *stateImage;
 
 @end
-∫
 
 /**
  >20%绿色
