@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZZZBatteryView">
+            <rect key="frame" x="0.0" y="0.0" width="26" height="11"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eQuantity.png" translatesAutoresizingMaskIntoConstraints="NO" id="7gm-6Z-LtM">
+                    <rect key="frame" x="0.0" y="0.0" width="26" height="11"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIH-C9-ymi">
+                    <rect key="frame" x="2.5" y="2.5" width="19.5" height="6"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Rl-gh-Xmy">
+                            <rect key="frame" x="0.0" y="0.0" width="19.5" height="6"/>
+                            <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6Rl-gh-Xmy" firstAttribute="centerY" secondItem="HIH-C9-ymi" secondAttribute="centerY" id="OhS-bL-xlg"/>
+                        <constraint firstItem="6Rl-gh-Xmy" firstAttribute="width" secondItem="HIH-C9-ymi" secondAttribute="width" id="Zbe-at-K0x"/>
+                        <constraint firstItem="6Rl-gh-Xmy" firstAttribute="height" secondItem="HIH-C9-ymi" secondAttribute="height" id="o3s-FJ-GL5"/>
+                        <constraint firstItem="6Rl-gh-Xmy" firstAttribute="leading" secondItem="HIH-C9-ymi" secondAttribute="leading" id="rQo-hi-SxD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7gm-6Z-LtM" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="BbF-eZ-Wsc"/>
+                <constraint firstItem="HIH-C9-ymi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="COV-uV-Cye"/>
+                <constraint firstItem="HIH-C9-ymi" firstAttribute="height" secondItem="7gm-6Z-LtM" secondAttribute="height" multiplier="0.6" id="EVO-5l-lYW"/>
+                <constraint firstItem="7gm-6Z-LtM" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="JIf-Ez-KdT"/>
+                <constraint firstItem="HIH-C9-ymi" firstAttribute="width" secondItem="7gm-6Z-LtM" secondAttribute="width" multiplier="0.75" id="ft2-OB-MLf"/>
+                <constraint firstItem="7gm-6Z-LtM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hDY-hD-Q3h"/>
+                <constraint firstItem="HIH-C9-ymi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="0.93" id="lMU-dp-2G6"/>
+                <constraint firstItem="7gm-6Z-LtM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tzQ-vv-2bv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="conBatWith" destination="Zbe-at-K0x" id="j4x-Iq-9ZY"/>
+                <outlet property="fullviewBg" destination="HIH-C9-ymi" id="xMH-QP-u7X"/>
+                <outlet property="stateImage" destination="7gm-6Z-LtM" id="0xF-9y-Bmq"/>
+                <outlet property="xianshiView" destination="6Rl-gh-Xmy" id="Aij-JR-kJf"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="113"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eQuantity.png" width="134" height="65"/>
+    </resources>
+</document>
